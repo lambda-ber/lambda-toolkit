@@ -1,0 +1,25 @@
+{
+  "name": "lambda-toolkit",
+  "owner": {
+    "name": "Harry Caufield",
+    "email": "jhc@lbl.gov"
+  },
+  "metadata": {
+    "description": "Agent Skills for working with LAMBDA structural biology data (lambda-ber-schema, LAMBDA Core RO-Crate profile)",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "lambda-toolkit",
+      "description": "Read, write, validate, import, and package LAMBDA structural biology data",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/lambda-schema",
+        "./skills/lambda-validate",
+        "./skills/lambda-etl",
+        "./skills/lambda-rocrate"
+      ]
+    }
+  ]
+}
